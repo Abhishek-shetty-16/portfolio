@@ -213,22 +213,42 @@
 
 
     <section id="internship">
-      <h2>Internship</h2>
-      <div class="projects">
-        <div class="project">
-          <h3>Software Engineer Intern – Optimum Codes</h3>
-          <p>
-            Completed a 2-month internship from June 02, 2025 to August 02, 2025.  
-            Worked on PostgreSQL for databases, Python FastAPI for API endpoints,  
-            and React.js + Tailwind CSS for frontend, with UI design in Figma.
-          </p>
-          <!-- Internship Section -->
-<button class="view-cert-btn" onclick="openInternshipModal()">View Certificate</button>
+  <h2>Internship</h2>
 
-        </div>
-      </div>
-    </section>
+  <div class="projects">
 
+    <!-- Optimum Codes -->
+    <div class="project">
+      <h3>Software Engineer Intern – Optimum Codes</h3>
+      <p>
+        Completed a 2-month internship from June 02, 2025 to August 02, 2025.
+        Worked on PostgreSQL for databases, Python FastAPI for API development,
+        React.js + Tailwind CSS for frontend, and designed UI using Figma.
+      </p>
+
+      <button class="view-cert-btn" onclick="openInternshipModal()">
+        View Certificate
+      </button>
+    </div>
+
+    <!-- Blugate Software Technologies -->
+    <div class="project">
+      <h3>Software Engineer Intern – Blugate Software Technologies Pvt. Ltd.</h3>
+      <p>
+        Successfully completed a 4-month internship where I worked on
+        full-stack web application development using Flask, Django,
+        PostgreSQL, HTML, CSS, JavaScript, and REST APIs. I collaborated
+        with the development team to build scalable applications and gained
+        practical experience in backend development and database management.
+      </p>
+
+      <button class="view-cert-btn" onclick="openBlugateModal()">
+        View Certificate
+      </button>
+    </div>
+
+  </div>
+</section>
    <section id="contact">
   <h2>Contact</h2>
 
@@ -318,6 +338,33 @@ form.addEventListener('submit', function(e) {
     </div>
     <div id="pdfView" style="display:none;">
       <iframe src="completionLetter_Abishek.pdf" width="100%" height="500px" title="Internship Certificate PDF"></iframe>
+    </div>
+  </div>
+</div>
+  <!-- Blugate Internship Certificate Modal -->
+<div id="blugateModal" class="modal" aria-hidden="true">
+  <div class="modal-content">
+    <button class="close-btn"
+      onclick="closeBlugateModal()"
+      aria-label="Close Certificate">
+      &times;
+    </button>
+
+    <div id="blugatePreview">
+      <img src="blugate_preview.jpg"
+           alt="Blugate Certificate Preview"
+           class="cert-preview">
+
+      <button class="pdf-btn" onclick="showBlugatePDF()">
+        View Full PDF
+      </button>
+    </div>
+
+    <div id="blugatePDF" style="display:none;">
+      <iframe src="Blugate_Completion_Letter.pdf"
+              width="100%"
+              height="500px">
+      </iframe>
     </div>
   </div>
 </div>
