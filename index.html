@@ -426,6 +426,21 @@ form.addEventListener('submit', function(e) {
     document.getElementById("previewView").style.display = "none";
     document.getElementById("pdfView").style.display = "block";
   }
+    // Blugate Internship Certificate
+function openBlugateModal() {
+  document.getElementById("blugateModal").style.display = "flex";
+}
+
+function closeBlugateModal() {
+  document.getElementById("blugateModal").style.display = "none";
+  document.getElementById("blugatePreview").style.display = "block";
+  document.getElementById("blugatePDF").style.display = "none";
+}
+
+function showBlugatePDF() {
+  document.getElementById("blugatePreview").style.display = "none";
+  document.getElementById("blugatePDF").style.display = "block";
+}
 
   
 window.addEventListener("load", () => {
